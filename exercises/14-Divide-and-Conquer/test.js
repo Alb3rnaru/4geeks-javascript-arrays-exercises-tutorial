@@ -42,7 +42,7 @@ it('The length of the returned array should be equal to the length of the origin
     const _app = rewire('./app.js');
     const mergeTwoList = _app.__get__('mergeTwoList');
 
-    const _input = [ 23,34,65,87,45,89,34,2,5,8 ];
+    const _input = [ 23,34,65,23,45,87,45,89,34,2,5,8 ];
     const arrTest = mergeTwoList(_input);
     expect(arrTest.length).toEqual(_input.length);
 });
